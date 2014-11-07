@@ -14,6 +14,7 @@ class MainHandler(webapp2.RequestHandler): #declaring a class
 <html>
     <head>
         <title>Simple Login</title>
+        <link href="css/main.css" rel="stylesheet" type="text/css">
     </head>
     <body>'''
 
@@ -28,6 +29,7 @@ class MainHandler(webapp2.RequestHandler): #declaring a class
         if self.request.GET:
             user = self.request.GET['user']
             email = self.request.GET['email']
+            self.response.write(page_head + user + " " + email +page_body + page_close)
         else:
             self.response.write(page_head + page_body + page_close) #this prints info
         #code goes here
