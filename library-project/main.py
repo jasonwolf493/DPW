@@ -26,6 +26,8 @@ class MainHandler(webapp2.RequestHandler):
         print("Coverage amount: " + str(person1.coverage_amount))
         print("Total Coverage: " + str(person1.total_coverage))
         print("Recent Driving Incident: " + str(person1.recent_incident))
+        print("Car Type: " + str(person1.vehicle_type))
+        print("Risk: " + str(person1.risk))
 
         self.response.write(p.print_out())
 

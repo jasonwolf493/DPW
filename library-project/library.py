@@ -14,6 +14,28 @@ class GenerateQuote(object):
         self.__car_value = 0
         self.__coverage_amount = 0
         self.__total_coverage = 0  # How much will have to be covered coverage_amount + car val
+        self.__risk = 0
+
+    @property
+    def risk(self):
+        if self.vehicle_type == "Sports Car":
+            print "Has Sports Car"
+            self.__risk = 100
+            return self.__risk
+        elif self.vehicle_type == "Truck":
+            print "Has truck"
+            self.__risk = 50
+            return self.__risk
+        elif self.vehicle_type == "Economy":
+            print "Has Economy car"
+            self.__risk = -50
+            return self.__risk
+        else:
+            self.__risk = 0
+            print "Other"
+            return self.__risk
+
+
 
     # Getter and Setter for the private __car_value
     @property
