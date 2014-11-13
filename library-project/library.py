@@ -51,9 +51,10 @@ class GenerateQuote(object):  # this has every attribute we'll need
 
     @property
     def monthly_cost(self):  # Calculate monthly payment, we take the total coverage and divide it by 10 years
-        self.__monthly_cost = (self.total_coverage/120)+self.__risk  # we also make sure we add the risk in after.
+        self.__monthly_cost = (self.total_coverage/180)+self.car_type_risk
         return self.__monthly_cost
-# 120 MONTHS OR TEN YEARS
+          # we also make sure we add the risk in after.
+# 180 MONTHS OR 15 YEARS
 
     # Getter and Setter for the private __car_value
     @property
@@ -78,14 +79,15 @@ class GenerateQuote(object):  # this has every attribute we'll need
     def coverage_amount(self, a):
         if a > 0:  # Make sure they have at least added some coverage
             print "Cov amount greater than 0"
-            self.__coverage_amount = a + self.car_value
+            self.__coverage_amount = a
         else:  # if for some reason they don't we add 20000
+            print "adfda"
             self.__coverage_amount = 20000
 
     # property for the private __total_coverage sets a total amount that will be covered
     @property
     def total_coverage(self):
-        self.__total_coverage = self.car_value + self.coverage_amount
+        self.__total_coverage = int(self.car_value) + int(self.coverage_amount)
         return self.__total_coverage
 
 

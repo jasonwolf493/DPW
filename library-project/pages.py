@@ -8,14 +8,14 @@ Python 2
 #this is just the page for the html of the page nothing more!
 class Page(object):
     def __init__(self):
-        self.__title = "Free Online Auto Quote!"
+        self.title = "Free Online Auto Quote!"
         self.css = "css/main.css"
-        self.__head = """
+        self.head = """
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>{self.title}</title>
-        <link href="{self.css}" rel="stylesheet" type="text/css">
+        <title>Free Online Auto Quote!</title>
+        <link href="css/main.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         """
@@ -38,31 +38,41 @@ class Page(object):
                 <input class="submit" type="submit" value="Submit" />
             </form>
 
-        </div>
+
 
 
 
         """
         self.body2 = """
         <div class=container>
-            
-        </div>
-
-
-
+        <h1>Your Auto Quote</h1>
+        Vehicle Type: """
+        self.body3 = """
+        </br>Recent Incident: """
+        self.body4 = """
+        </br>Vehicle Value:
         """
-
-        self.__error = ''
-        self.__close = """
+        self.body5 = """
+        </br>Coverage:
+        """
+        self.body6 = """
+        </br>Total Coverage:
+        """
+        self.body7 = """
+        </br>Monthly Payment:
+        """
+        self.error = ''
+        self.close = """
+        </div>
     </body>
 </html>
         """
         # below we def print_out which will just return the html
     def print_out(self):
-        all = self.__head + self.body + self.__error + self.__close
+        all = self.head + self.body + self.error + self.close
         return all
 
         # display HTML after form completion
     def print_completion(self):
-        complete = self.__head + self.body2 +  self.__error + self.__close
+        complete = self.head + self.body2 + self.body3 + self.error + self.close
         return complete
