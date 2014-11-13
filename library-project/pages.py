@@ -8,7 +8,7 @@ Python 2
 #this is just the page for the html of the page nothing more!
 class Page(object):
     def __init__(self):
-        self.__title = "Welcome!"
+        self.__title = "Free Online Auto Quote!"
         self.css = "css/main.css"
         self.__head = """
 <!DOCTYPE HTML>
@@ -20,7 +20,29 @@ class Page(object):
     <body>
         """
 
-        self.body = "Welcome to the page"
+        self.body = """
+        <div class=container>
+            <form method="GET">
+                <input type="text" placeholder="Car Value:" name="Car_Val"><br>
+                <input type="text" placeholder="Coverage:" name="Cov_Amount"><br>
+                <select name="Veh_Type">
+                    <option value="Truck">Truck</option>
+                    <option value="Sports Car">Sports Car</option>
+                    <option value="Other">Other</option>
+                </select>
+                <select name="Rec_Incident">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+                <input class="submit" type="submit" value="Submit" />
+            </form>
+
+        </div>
+
+
+
+        """
+
         self.__error = ''
         self.__close = """
     </body>
