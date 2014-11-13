@@ -23,11 +23,12 @@ class Page(object):
         self.body = """
         <div class=container>
             <form method="GET">
-                <input type="text" placeholder="Car Value:" name="Car_Val"><br>
-                <input type="text" placeholder="Coverage:" name="Cov_Amount"><br>
+                <input type="number" placeholder="Car Value:" name="Car_Val"><br>
+                <input type="number" placeholder="Coverage:" name="Cov_Amount"><br>
                 <select name="Veh_Type">
                     <option value="Truck">Truck</option>
                     <option value="Sports Car">Sports Car</option>
+                    <option value="Economy">Economy Car</option>
                     <option value="Other">Other</option>
                 </select>
                 <select name="Rec_Incident">
@@ -37,6 +38,14 @@ class Page(object):
                 <input class="submit" type="submit" value="Submit" />
             </form>
 
+        </div>
+
+
+
+        """
+        self.body2 = """
+        <div class=container>
+            
         </div>
 
 
@@ -52,3 +61,8 @@ class Page(object):
     def print_out(self):
         all = self.__head + self.body + self.__error + self.__close
         return all
+
+        # display HTML after form completion
+    def print_completion(self):
+        complete = self.__head + self.body2 +  self.__error + self.__close
+        return complete

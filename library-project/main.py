@@ -19,20 +19,30 @@ class MainHandler(webapp2.RequestHandler):
 
         person1 = GenerateQuote()
         #person1.vehicle_type = "Truck"
-        person1.vehicle_type = self.request.GET['Veh_Type']
-        person1.recent_incident = self.request.GET['Rec_Incident']
-        #person1.recent_incident = "Yes"
-        person1.car_value = 5000
-        person1.coverage_amount = 1000
-        print("Value: " + str(person1.car_value))
-        print("Coverage amount: " + str(person1.coverage_amount))
-        print("Total Coverage: " + str(person1.total_coverage))
-        print("Recent Driving Incident: " + str(person1.recent_incident))
-        print("Car Type: " + str(person1.vehicle_type))
-        print("Risk: " + str(person1.car_type_risk))
-        print("Monthly Cost: " + str(person1.monthly_cost))
+        if self.request.GET:
+            person1.vehicle_type = self.request.GET['Veh_Type']
 
-        self.response.write(p.print_out())
+            person1.recent_incident = self.request.GET['Rec_Incident']
+        #person1.recent_incident = "Yes"
+        #person1.car_value = 5000
+            person1.car_value = self.request.GET['Car_Val']
+        #person1.coverage_amount = 1000
+            self.response.write(p.print_completion())
+
+        else:
+            self.response.write(p.print_out())
+
+        #self.response.write(person1.car_value)
+'''
+        print(person1.car_value)
+        print(person1.coverage_amount)
+        print(person1.total_coverage)
+        print(person1.recent_incident)
+        print(person1.vehicle_type)
+        print(person1.car_type_risk)
+        print(person1.monthly_cost)
+'''
+
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)

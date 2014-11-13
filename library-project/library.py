@@ -62,11 +62,12 @@ class GenerateQuote(object):  # this has every attribute we'll need
 
     @car_value.setter
     def car_value(self, v):  # use the customers input
+
         if v < 1:
             print "invalid car val"
             self.__car_value = 500
         else:
-            self.__car_value = v + 1000
+            self.__car_value = v
 
     # Getter and setter for the private coverage amount
     @property
