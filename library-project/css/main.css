@@ -1,3 +1,67 @@
 body{
-background-color: grey;
+background-color: #B3C6FF;
+}
+.container{
+    width: 70%;
+    border: 1px solid black;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius:15px;
+    box-shadow: 0px 0px 15px grey;
+}
+h1{
+    font-family:arial;
+    font-size:30pt;
+    font-weight:light;
+    color: #B3C6FF;
+    margin-top:0px;
+    text-shadow: 1px 1px 1px grey;
+    -moz-text-shadow: 1px 1px 1px grey;
+    -webkit-text-shadow: 1px 1px 1px grey;
+
+}
+p{
+    font-size: 16pt;
+    margin-bottom:5px;
+}
+.Monthly{
+    font-size: 24pt;
+    color: #FF571F;
+    text-shadow: 1px 1px 1px grey;
+    moz-text-shadow: 1px 1px 1px grey;
+}
+#input_box{
+    width:250px;
+    height:35px;
+    font-size:13pt;
+    border: 1px solid silver;
+    border-radius:10px;
+    margin-bottom:25px;
+}
+.drop_down{
+    width:180px;
+    height:35px;
+    font-size:13pt;
+    border: 1px solid silver;
+    border-radius:10px;
+    margin-bottom:25px;
+}
+h2{
+    color:#B3C6FF;
+    font-family:arial;
+    text-shadow: 1px 1px 1px grey;
+    -moz-text-shadow: 1px 1px 1px grey;
+    -webkit-text-shadow: 1px 1px 1px grey;
+
+}
+.info{
+    color:grey;
+    font-size:12pt;
+}
+.submit{
+    width:250px;
+    height:30px;
+    font-size:18px;
+    color:dark-grey;
 }

@@ -16,6 +16,7 @@ class Page(object):
     <head>
         <title>Free Online Auto Quote!</title>
         <link href="css/main.css" rel="stylesheet" type="text/css">
+
     </head>
     <body>
         """
@@ -23,19 +24,23 @@ class Page(object):
         self.body = """
         <div class=container>
             <form method="GET">
-                <input type="number" placeholder="Car Value:" name="Car_Val"><br>
-                <input type="number" placeholder="Coverage:" name="Cov_Amount"><br>
-                <select name="Veh_Type">
+                <h1>Fill Out Your Free Quote</h1>
+                <input id="input_box" type="number" placeholder="Car Value:" name="Car_Val"><br>
+                <input id="input_box" type="number" placeholder="Coverage:" name="Cov_Amount"><br>
+                <h2>Vehicle Type:</h2>
+                <select class="drop_down" name="Veh_Type">
                     <option value="Truck">Truck</option>
                     <option value="Sports Car">Sports Car</option>
                     <option value="Economy">Economy Car</option>
                     <option value="Other">Other</option>
                 </select>
-                <select name="Rec_Incident">
+                <h2>Recent Incident:</h2>
+                <p class="info">In the last 12 months.<p>
+                <select class="drop_down" name="Rec_Incident">
                     <option value="Yes">Yes</option>
                     <option value="No">No</option>
-                </select>
-                <input class="submit" type="submit" value="Submit" />
+                </select><br>
+                <button class="submit" type="submit" value="Submit">Submit</button>
             </form>
 
 
@@ -45,25 +50,26 @@ class Page(object):
         """
         self.body2 = """
         <div class=container>
-        <h1>Your Auto Quote</h1>
-        Vehicle Type: """
+        <h1>Personalized Auto Quote</h1>
+        <p>Vehicle Type:</p> """
         self.body3 = """
-        </br>Recent Incident: """
+        </br><p>Recent Incident:</p> """
         self.body4 = """
-        </br>Vehicle Value:
+        </br><p>Vehicle Value:</p>
         """
         self.body5 = """
-        </br>Coverage:
+        </br><p>Coverage:</p>
         """
         self.body6 = """
-        </br>Total Coverage:
+        </br><p>Total Coverage:</p>
         """
         self.body7 = """
-        </br>Monthly Payment:
+        </br><p class="Monthly">Monthly Payment:</p>
         """
         self.error = ''
         self.close = """
         </div>
+
     </body>
 </html>
         """
