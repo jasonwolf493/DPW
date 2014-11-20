@@ -4,6 +4,7 @@ Jason Wolf
 DPW
 Dynamic page
 """
+from library import GenerateInputs
 
 #This Is the basic page guidelines
 class Page(object):
@@ -57,7 +58,6 @@ class FormPage(Page):
     @inputs.setter
     def inputs(self, arr):
         self.__inputs = arr
-
         for item in arr:
             self._form_inputs += '<input type="' + item[1] + '" name="' + item[0]
             #if there is a third item add it otherwise end tag
@@ -96,7 +96,10 @@ class ContactPage(Page):
             <p>Email: FakeEmail@Fake.com</p><br>
             <p>Address: 1234 placeholder blv. USA
 
-        '''
+        ''' + '<p>' + str(GenerateInputs.inputs[3][0]) + str(GenerateInputs.inputs[3][1]) + '</p><br>' + '<p>' + str(GenerateInputs.inputs[3][2])
+
+
+
     def print_out(self):
         all = self.head + self.body + self._contact + self.close
         return all

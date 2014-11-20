@@ -8,7 +8,7 @@ import webapp2
 
 
 from pages import Page, FormPage, FourZeroFourPage, ContactPage
-from library import GeneratePage
+from library import GeneratePage,GenerateInputs
 
 
 class MainHandler(webapp2.RequestHandler):
@@ -26,7 +26,9 @@ class MainHandler(webapp2.RequestHandler):
         except:
             p = Page()
         page_gen = GeneratePage()
-        p.inputs = [['first_name', 'text', 'First Name'], ['last_name', 'text', 'Last Name'], ['Submit', 'submit']]
+
+        p.inputs = GenerateInputs.inputs
+
 
         if self.request.GET:
             page_gen.link = self.request.GET['link']
