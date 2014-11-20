@@ -8,7 +8,7 @@ import webapp2
 
 
 from pages import Page, FormPage, FourZeroFourPage, ContactPage
-from library import GeneratePage,GenerateInputs
+from library import GeneratePage, GenerateInputs, GenerateContacts
 
 
 class MainHandler(webapp2.RequestHandler):
@@ -28,6 +28,7 @@ class MainHandler(webapp2.RequestHandler):
         page_gen = GeneratePage()
 
         p.inputs = GenerateInputs.inputs
+        p.contacts = GenerateContacts.inputs
 
 
         if self.request.GET:

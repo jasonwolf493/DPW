@@ -9,4 +9,8 @@ class GeneratePage(object):  # this has every attribute we'll need
 
 
 class GenerateInputs(object):
-    inputs = [['first_name', 'text', 'First Name'], ['last_name', 'text', 'Last Name'], ['Submit', 'submit'], ['Phone: ', '1-555-555-5555', 'Email: ']]
+    inputs = [['first_name', 'text', 'First Name'], ['last_name', 'text', 'Last Name'], ['Submit', 'submit']]
+
+
+class GenerateContacts(object):
+    inputs = ['Phone: ', '1-555-555-5555', 'Email: ', 'FakeEmail@Fake.com', 'Address: ', '1234 placeholder blv. USA']

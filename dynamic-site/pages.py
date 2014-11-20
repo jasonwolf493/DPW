@@ -5,8 +5,9 @@ DPW
 Dynamic page
 """
 from library import GenerateInputs
-
 #This Is the basic page guidelines
+
+
 class Page(object):
     def __init__(self):
         self.css = "css/main.css"
@@ -89,17 +90,26 @@ class FourZeroFourPage(Page):
 class ContactPage(Page):
     def __init__(self):
         super(ContactPage, self).__init__()
-        self._contact = '''
+
+        self._add_contact = '''
             <h1>Did you need something?</h1>
-            <p>If so, here's our contact info feel free to use it!</p><br>
-            <p>Phone: 1-555-555-5555</p><br>
-            <p>Email: FakeEmail@Fake.com</p><br>
-            <p>Address: 1234 placeholder blv. USA
+            <p>If so, here's our contact info feel free to use it!</p><br>'''
+    @property
+    def contacts(self):
+        pass
 
-        ''' + '<p>' + str(GenerateInputs.inputs[3][0]) + str(GenerateInputs.inputs[3][1]) + '</p><br>' + '<p>' + str(GenerateInputs.inputs[3][2])
+    @contacts.setter
+    def contacts(self, con):
+        self._contact = con
+        for item in con:
+            self._add_contact += '<p>' + str(item) + ''
+            #if there is a third item add it otherwise end tag
 
+        print self._add_contact
+
+        # polymorphism here
 
 
     def print_out(self):
-        all = self.head + self.body + self._contact + self.close
+        all = self.head + self.body + self._add_contact + self.close
         return all
