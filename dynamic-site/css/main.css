@@ -15,7 +15,7 @@ h1{
     font-size:30pt;
     font-weight:light;
     color: #B3C6FF;
-    margin-top:0px;
+    margin-top:23px;
     text-shadow: 1px 1px 1px grey;
     -moz-text-shadow: 1px 1px 1px grey;
     -webkit-text-shadow: 1px 1px 1px grey;
@@ -31,13 +31,10 @@ p{
     text-shadow: 1px 1px 1px grey;
     moz-text-shadow: 1px 1px 1px grey;
 }
-#input_box{
-    width:250px;
-    height:35px;
-    font-size:13pt;
-    border: 1px solid silver;
-    border-radius:10px;
+.input_box{
+
     margin-bottom:25px;
+    margin-top:20px;
 }
 .drop_down{
     width:180px;
@@ -64,4 +61,14 @@ h2{
     height:30px;
     font-size:18px;
     color:dark-grey;
+}
+a{
+    text-decoration:none;
+    color: black;
+    font-size:20px;
+    background-color:#B3C6FF;
+    border:1px solid black;
+    border-radius:3px;
+    margin: 0px 10px 10px 0px;
+    padding:10px;
 }

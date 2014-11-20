@@ -1,20 +1,19 @@
 """
 Jason Wolf
-11/5/2014
+11/19/2014
 DPW
-Python 2
+Dynamic page
 """
 
-#this is just the page for the html of the page nothing more!
+#This Is the basic page guidelines
 class Page(object):
     def __init__(self):
-        self.title = "Free Online Auto Quote!"
         self.css = "css/main.css"
         self.head = """
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Free Online Auto Quote!</title>
+        <title>Simple server side template</title>
         <link href="css/main.css" rel="stylesheet" type="text/css">
 
     </head>
@@ -23,7 +22,7 @@ class Page(object):
 
         self.body = """
         <div class=container>
-            <a href="?link=index">Home</a><a href="?link=form">Sign Up</a>
+            <a href="?link=index">Home</a><a href="?link=form">Sign Up</a><a href="?link=contact">Contact Us</a>
         """
 
         self.error = ''
@@ -44,10 +43,11 @@ class FormPage(Page):
     def __init__(self):
         # constructor for the super class
         super(FormPage, self).__init__()
-        self._form_open = '<form method="GET">'
+        self._form_open = '<form class="input_box" method="GET">'
         self._form_close = '</form>'
         self.__inputs = []
         self._form_inputs = ''
+        self._text = '<p>Keep in mind the submit button breaks I could fix with JQuery by appending the missing "Link" attribute to the url</p>'
         # first name last name button
 
     @property
@@ -69,7 +69,7 @@ class FormPage(Page):
 
         # polymorphism here
     def print_out(self):
-        return self.head + self.body + self._form_open + self._form_inputs + self._form_close + self.close
+        return self.head + self.body + self._text + self._form_open + self._form_inputs + self._form_close + self.close
 
 
 class FourZeroFourPage(Page):
@@ -100,29 +100,3 @@ class ContactPage(Page):
     def print_out(self):
         all = self.head + self.body + self._contact + self.close
         return all
-
-
-'''
-
-                   <form method="GET">
-                <h1>Fill Out Your Free Quote</h1>
-                <input id="input_box" type="number" placeholder="Car Value:" name="Car_Val"><br>
-                <input id="input_box" type="number" placeholder="Coverage:" name="Cov_Amount"><br>
-                <h2>Vehicle Type:</h2>
-                <select class="drop_down" name="Veh_Type">
-                    <option value="Truck">Truck</option>
-                    <option value="Sports Car">Sports Car</option>
-                    <option value="Economy">Economy Car</option>
-                    <option value="Other">Other</option>
-                </select>
-                <h2>Recent Incident:</h2>
-                <p class="info">In the last 12 months.<p>
-                <select class="drop_down" name="Rec_Incident">
-                    <option value="Yes">Yes</option>
-                    <option value="No">No</option>
-                </select><br>
-                <button class="submit" type="submit" value="Submit">Submit</button>
-            </form>
-
-
-'''

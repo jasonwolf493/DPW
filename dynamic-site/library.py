@@ -1,21 +1,16 @@
 __author__ = 'Jason'
 
-#class to calculate users insurance quote
-# use car type ex. sports economy truck
-# accident history
-# car value
-# coverage amount
+# Fill in the contact info with some info here
 
 
 class GeneratePage(object):  # this has every attribute we'll need
     def __init__(self):
         self.link = ""  # We use this to determine raises or lowers the risk factor
-        self.recent_incident = ""  # We also check for a crash in the past 12 months effects risk factor
-        self.__car_value = 0  # value of the car
-        self.__coverage_amount = 0  # How much do you intend on covering
-        self.__total_coverage = 0  # How much will have to be covered coverage_amount + car val
-        self.__risk = 0  # risk significantly increases a customers monthly payment
-        self.__monthly_cost = 0  # monthly cost after take in everything above we figure out the cost
+
+
+
+
+
 
     #risk calculation to make riskier drivers pay more
     @property

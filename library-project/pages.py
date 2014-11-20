@@ -23,7 +23,7 @@ class Page(object):
 
         self.body = """
         <div class=container>
-            <a href="?link=index">Home</a><a href="?link=form">Sign Up</a>
+            <a href="?link=index">Home</a><a href="?link=form">Sign Up</a><a href="?link=contact">Contact Us</a>
         """
 
         self.error = ''
