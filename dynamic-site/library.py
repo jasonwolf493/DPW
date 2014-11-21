@@ -5,7 +5,7 @@ __author__ = 'Jason'
 
 class GeneratePage(object):  # this has every attribute we'll need
     def __init__(self):
-        self.link = ""  # We use this to determine raises or lowers the risk factor
+        self.link = ""
 
 
 class GenerateInputs(object):

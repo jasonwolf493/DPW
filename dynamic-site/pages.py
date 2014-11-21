@@ -7,7 +7,7 @@ Dynamic page
 from library import GenerateInputs
 #This Is the basic page guidelines
 
-
+# The basic layout that all pages should use
 class Page(object):
     def __init__(self):
         self.css = "css/main.css"
@@ -40,7 +40,7 @@ class Page(object):
         all = self.head + self.body + self.error + self.close
         return all
 
-
+# The index page for the site, this page uses a sales array from the library to show sales
 class IndexPage(Page):
     def __init__(self):
         # constructor for the super class
@@ -72,7 +72,7 @@ class IndexPage(Page):
     def print_out(self):
         return self.head + self.body + self._index_body + self._sales_text + self.close
 
-
+# Form page is a page that adds inputs based on the array in libs it uses a for loop to make sure they are all used.
 class FormPage(Page):
     def __init__(self):
         # constructor for the super class
@@ -110,7 +110,7 @@ class FormPage(Page):
     def print_out(self):
         return self.head + self.body + self._form_body + self._text + self._form_open + self._form_inputs + self._form_close + self.close
 
-
+# this is a 404 page, it appears when the link key-value isn't associated with a page
 class FourZeroFourPage(Page):
     def __init__(self):
         super(FourZeroFourPage, self).__init__()
@@ -124,7 +124,7 @@ class FourZeroFourPage(Page):
         all = self.head + self.body + self._error + self.close
         return all
 
-
+# this page simply displays info from the contact array in the library
 class ContactPage(Page):
     def __init__(self):
         super(ContactPage, self).__init__()
