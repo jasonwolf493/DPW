@@ -7,8 +7,8 @@ Dynamic Page
 import webapp2
 
 
-from pages import Page, FormPage, FourZeroFourPage, ContactPage
-from library import GeneratePage, GenerateInputs, GenerateContacts
+from pages import Page, FormPage, FourZeroFourPage, ContactPage, IndexPage
+from library import GeneratePage, GenerateInputs, GenerateContacts, GenerateSales
 
 
 class MainHandler(webapp2.RequestHandler):
@@ -18,7 +18,7 @@ class MainHandler(webapp2.RequestHandler):
             if self.request.GET['link'] == 'form':
                 p = FormPage()
             elif self.request.GET['link'] == 'index':
-                p = Page()
+                p = IndexPage()
             elif self.request.GET['link'] == 'contact':
                 p = ContactPage()
             else:
@@ -29,7 +29,7 @@ class MainHandler(webapp2.RequestHandler):
 
         p.inputs = GenerateInputs.inputs
         p.contacts = GenerateContacts.inputs
-
+        p.sales = GenerateSales.inputs
 
         if self.request.GET:
             page_gen.link = self.request.GET['link']

@@ -41,6 +41,39 @@ class Page(object):
         return all
 
 
+class IndexPage(Page):
+    def __init__(self):
+        # constructor for the super class
+        super(IndexPage, self).__init__()
+        self.__inputs = []
+        self._sales_text = ''
+        self.__sales = []
+        self._index_body = '''
+            <h1>Welcome!</h1>
+            <p class="info">Check out our sales below!</p>
+            <p class="info">Some of these sales are exclusive to members.<p>
+            <h2>Today's Sales</h2>
+
+            '''
+        # first name last name button
+
+    @property
+    def sales(self):
+        pass
+
+    @sales.setter
+    def sales(self, arr):
+        self.__sales = arr
+        for item in arr:
+            self._sales_text += '' + str(item) + ''
+            #if there is a third item add it otherwise end tag
+
+        print self._sales_text
+        # polymorphism here
+    def print_out(self):
+        return self.head + self.body + self._index_body + self._sales_text + self.close
+
+
 class FormPage(Page):
     def __init__(self):
         # constructor for the super class
@@ -50,6 +83,12 @@ class FormPage(Page):
         self.__inputs = []
         self._form_inputs = ''
         self._text = '<p>Keep in mind the submit button breaks I could fix with JQuery by appending the missing "Link" attribute to the url</p>'
+        self._form_body = '''
+            <h1>Sign up</h1>
+            <p class="info">Interested in receiving updates?<br></p>
+            <p class="info">Use this form to get emails.<p>
+
+            '''
         # first name last name button
 
     @property
@@ -63,14 +102,14 @@ class FormPage(Page):
             self._form_inputs += '<input type="' + item[1] + '" name="' + item[0]
             #if there is a third item add it otherwise end tag
             try:
-                self._form_inputs += '" placeholder="' + item[2] + '" />'
+                self._form_inputs += '" placeholder="' + item[2] + '" /><br>'
             except:
                 self._form_inputs += '" />'
         print self._form_inputs
 
         # polymorphism here
     def print_out(self):
-        return self.head + self.body + self._text + self._form_open + self._form_inputs + self._form_close + self.close
+        return self.head + self.body + self._form_body + self._text + self._form_open + self._form_inputs + self._form_close + self.close
 
 
 class FourZeroFourPage(Page):
@@ -93,7 +132,7 @@ class ContactPage(Page):
 
         self._add_contact = '''
             <h1>Did you need something?</h1>
-            <p>If so, here's our contact info feel free to use it!</p><br>'''
+            <p class="info">If so, here's our contact info feel free to use it!</p><br>'''
     @property
     def contacts(self):
         pass
