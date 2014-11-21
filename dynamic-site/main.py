@@ -8,7 +8,7 @@ import webapp2
 
 # import all the required parts for the main handler
 from pages import Page, FormPage, FourZeroFourPage, ContactPage, IndexPage
-from library import GeneratePage, GenerateInputs, GenerateContacts, GenerateSales
+from library import GenerateInputs, GenerateContacts, GenerateSales
 
 # the main handler, it does just that... handles everything
 class MainHandler(webapp2.RequestHandler):

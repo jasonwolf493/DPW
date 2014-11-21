@@ -28,36 +28,34 @@
           <file leaf-file-name="pages.py" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pages.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
-                  <caret line="126" column="44" selection-start-line="126" selection-start-column="44" selection-end-line="126" selection-end-column="44" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="810">
+                  <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
                   <folding>
                     <element signature="e#187#938#0" expanded="false" />
                     <element signature="e#1056#1938#0" expanded="false" />
                     <element signature="e#2081#3412#0" expanded="false" />
                     <element signature="e#3532#3948#0" expanded="false" />
-                    <element signature="e#4048#4731#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-                  <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+                <state vertical-scroll-proportion="0.10853835" vertical-offset="0" max-vertical-offset="691">
+                  <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
                   <folding>
                     <element signature="e#0#46#1" expanded="false" />
-                    <element signature="e#381#1154#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="library.py" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="library.py" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/library.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.1519537" vertical-offset="0" max-vertical-offset="691">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
                   <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
                   <folding />
                 </state>
@@ -71,8 +69,8 @@
           <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.32561505" vertical-offset="0" max-vertical-offset="691">
-                  <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+                <state vertical-scroll-proportion="0.26049203" vertical-offset="0" max-vertical-offset="691">
+                  <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
                   <folding>
                     <element signature="e#0#46#1" expanded="false" />
                   </folding>
@@ -106,8 +104,8 @@
         <option value="$PROJECT_DIR$/page.py" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/pages.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/library.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -367,7 +365,6 @@
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#46#1" expanded="false" />
-            <element signature="e#381#1154#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -378,7 +375,6 @@
           <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
           <folding>
             <element signature="e#0#46#1" expanded="false" />
-            <element signature="e#381#1154#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -389,7 +385,6 @@
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="e#0#46#1" expanded="false" />
-            <element signature="e#381#1154#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -400,7 +395,6 @@
           <caret line="49" column="54" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
           <folding>
             <element signature="e#0#46#1" expanded="false" />
-            <element signature="e#381#1154#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -415,34 +409,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
-          <caret line="126" column="44" selection-start-line="126" selection-start-column="44" selection-end-line="126" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="810">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
           <folding>
             <element signature="e#187#938#0" expanded="false" />
             <element signature="e#1056#1938#0" expanded="false" />
             <element signature="e#2081#3412#0" expanded="false" />
             <element signature="e#3532#3948#0" expanded="false" />
-            <element signature="e#4048#4731#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#46#1" expanded="false" />
-            <element signature="e#381#1154#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/library.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1519537" vertical-offset="0" max-vertical-offset="691">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
           <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10853835" vertical-offset="0" max-vertical-offset="691">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#46#1" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
