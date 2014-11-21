@@ -6,14 +6,14 @@ Dynamic Page
 '''
 import webapp2
 
-
+# import all the required parts for the main handler
 from pages import Page, FormPage, FourZeroFourPage, ContactPage, IndexPage
 from library import GeneratePage, GenerateInputs, GenerateContacts, GenerateSales
 
-
+# the main handler, it does just that... handles everything
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        #page for class
+        # try/except with a nested if statement that checks the link attribute then sets p to the correct data object in pages
         try:
             if self.request.GET['link'] == 'form':
                 p = FormPage()
@@ -25,18 +25,15 @@ class MainHandler(webapp2.RequestHandler):
                 p = FourZeroFourPage()
         except:
             p = Page()
-        page_gen = GeneratePage()
 
+        # sets the correct array for the correct page
         p.inputs = GenerateInputs.inputs
         p.contacts = GenerateContacts.inputs
         p.sales = GenerateSales.inputs
 
-        if self.request.GET:
-            page_gen.link = self.request.GET['link']
-            self.response.write(p.print_out())
 
-        else:
-            self.response.write(p.print_out())
+        # writes everything to the page
+        self.response.write(p.print_out())
 
 
 app = webapp2.WSGIApplication([
