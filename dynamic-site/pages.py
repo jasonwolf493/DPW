@@ -24,7 +24,7 @@ class Page(object):
 
         self.body = """
         <div class=container>
-            <a href="?link=index">Home</a><a href="?link=form">Sign Up</a><a href="?link=contact">Contact Us</a>
+            <a href="?link=index">Home</a><a href="?link=form">Sign Up</a><a href="?link=contact">Contact Us</a><a href="?link=404">404 Error</a>
         """
 
         self.error = ''
@@ -45,7 +45,6 @@ class IndexPage(Page):
     def __init__(self):
         # constructor for the super class
         super(IndexPage, self).__init__()
-        self.__inputs = []
         self._sales_text = ''
         self.__sales = []
         self._index_body = '''
