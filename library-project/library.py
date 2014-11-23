@@ -7,9 +7,9 @@ __author__ = 'Jason'
 # coverage amount
 
 
-class GeneratePage(object):  # this has every attribute we'll need
+class GenerateQuote(object):  # this has every attribute we'll need
     def __init__(self):
-        self.link = ""  # We use this to determine raises or lowers the risk factor
+        self.vehicle_type = ""  # We use this to determine raises or lowers the risk factor
         self.recent_incident = ""  # We also check for a crash in the past 12 months effects risk factor
         self.__car_value = 0  # value of the car
         self.__coverage_amount = 0  # How much do you intend on covering
@@ -20,13 +20,29 @@ class GeneratePage(object):  # this has every attribute we'll need
     #risk calculation to make riskier drivers pay more
     @property
     def car_type_risk(self):  # check the kind of car, and recent incidents then calculate risk accordingly
-        if self.link == "form":
-            print "is form page"
+        if self.vehicle_type == "Sports Car":
+            print "Has Sports Car"
             if self.recent_incident == "Yes":
                 self.__risk = 150
                 return self.__risk
             else:
                 self.__risk = 100
+                return self.__risk
+        elif self.vehicle_type == "Truck":
+            print "Has truck"
+            if self.recent_incident == "Yes":
+                self.__risk = 100
+                return self.__risk
+            else:
+                self.__risk = 50
+                return self.__risk
+        elif self.vehicle_type == "Economy":
+            print "Has Economy car"
+            if self.recent_incident == "Yes":
+                self.__risk = 0
+                return self.__risk
+            else:
+                self.__risk = -50
                 return self.__risk
         else:
             self.__risk = 0

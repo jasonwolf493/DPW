@@ -8,8 +8,11 @@ Python 2
 #this is just the page for the html of the page nothing more!
 class Page(object):
     def __init__(self):
+        # this is the title of the page and will show up in the tab
         self.title = "Free Online Auto Quote!"
+        # this is the link to the css file
         self.css = "css/main.css"
+        # this is the head of the page and it has all the required links and opening tags
         self.head = """
 <!DOCTYPE HTML>
 <html>
@@ -20,91 +23,10 @@ class Page(object):
     </head>
     <body>
         """
-
+        # this is the actual body of the document anything that is typed in here will show up in the body
         self.body = """
         <div class=container>
-            <a href="?link=index">Home</a><a href="?link=form">Sign Up</a><a href="?link=contact">Contact Us</a>
-        """
-
-        self.error = ''
-        self.close = """
-        </div>
-
-    </body>
-</html>
-        """
-        # below we def print_out which will just return the html
-
-    def print_out(self):
-        all = self.head + self.body + self.error + self.close
-        return all
-
-
-class FormPage(Page):
-    def __init__(self):
-        # constructor for the super class
-        super(FormPage, self).__init__()
-        self._form_open = '<form method="GET">'
-        self._form_close = '</form>'
-        self.__inputs = []
-        self._form_inputs = ''
-        # first name last name button
-
-    @property
-    def inputs(self):
-        pass
-
-    @inputs.setter
-    def inputs(self, arr):
-        self.__inputs = arr
-
-        for item in arr:
-            self._form_inputs += '<input type="' + item[1] + '" name="' + item[0]
-            #if there is a third item add it otherwise end tag
-            try:
-                self._form_inputs += '" placeholder="' + item[2] + '" />'
-            except:
-                self._form_inputs += '" />'
-        print self._form_inputs
-
-        # polymorphism here
-    def print_out(self):
-        return self.head + self.body + self._form_open + self._form_inputs + self._form_close + self.close
-
-
-class FourZeroFourPage(Page):
-    def __init__(self):
-        super(FourZeroFourPage, self).__init__()
-        self._error = '''
-            <h1>404 Page Not Found</h1>
-            <p>The link you have followed has lead you to a page that no longer exists, or never did.</p><br>
-            <p>Sorry for the inconvenience...</p>
-
-        '''
-    def print_out(self):
-        all = self.head + self.body + self._error + self.close
-        return all
-
-
-class ContactPage(Page):
-    def __init__(self):
-        super(ContactPage, self).__init__()
-        self._contact = '''
-            <h1>Did you need something?</h1>
-            <p>If so, here's our contact info feel free to use it!</p><br>
-            <p>Phone: 1-555-555-5555</p><br>
-            <p>Email: FakeEmail@Fake.com</p><br>
-            <p>Address: 1234 placeholder blv. USA
-
-        '''
-    def print_out(self):
-        all = self.head + self.body + self._contact + self.close
-        return all
-
-
-'''
-
-                   <form method="GET">
+            <form method="GET">
                 <h1>Fill Out Your Free Quote</h1>
                 <input id="input_box" type="number" placeholder="Car Value:" name="Car_Val"><br>
                 <input id="input_box" type="number" placeholder="Coverage:" name="Cov_Amount"><br>
@@ -125,4 +47,45 @@ class ContactPage(Page):
             </form>
 
 
-'''
+
+
+
+        """
+
+        # These are additional body"parts" that will show up in the body if needed
+        self.body2 = """
+        <div class=container>
+        <h1>Personalized Auto Quote</h1>
+        <p>Vehicle Type:</p> """
+        self.body3 = """
+        </br><p>Recent Incident:</p> """
+        self.body4 = """
+        </br><p>Vehicle Value:</p>
+        """
+        self.body5 = """
+        </br><p>Coverage:</p>
+        """
+        self.body6 = """
+        </br><p>Total Coverage:</p>
+        """
+        self.body7 = """
+        </br><p class="Monthly">Monthly Payment:</p>
+        """
+        self.error = ''
+        self.close = """
+        </div>
+
+    </body>
+</html>
+        """
+        # below we def print_out which will just return the html
+    def print_out(self):
+        # concats most the above info
+        all = self.head + self.body + self.error + self.close
+        return all
+
+        # display HTML after form completion
+    def print_completion(self):
+        # display info after the form is complete
+        complete = self.head + self.body2 + self.body3 + self.error + self.close
+        return complete
