@@ -64,7 +64,7 @@ else:
 
 #the magical pen writes the story on the scroll
 def tell_story(name, loner, ale, ale_type, number1, number2, age):
-    year = number1 + number2
+    year = number1 + number2 * 3
 
     #first part introductory to the story
     story_text = """
