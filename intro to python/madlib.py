@@ -64,19 +64,21 @@ were out, you could hear clinking of glasses and loud dwarves inside the tavern.
     else:
         loner_story = "\nInside the tavern sat a young dwarf, " + name + " was only " + age + " back then. Back then " + name + " was very outgoing, they\n could always be found at the same table of the tavern with the group of dwarves. " + dwarves["joe"] + " and " + dwarves["larry"] + " were two regulars also."
 
-
-    #print dwarves["larry"], dwarves["joe"]
-
-
     #third part
     if ale == "yes":
         ale_story = "\n" + name + " was fond of the crisp bubbly " + ale_type + "-ale that the tender slammed on the table. Though " + name + " was frightened\n by the thought of " + ale_type + ", " + name + " was sure that the name had nothing to do with actual " + ale_type
     else:
         ale_story = "\n" + name + " was furious that such a coward would consider even setting this ale within their sight. " + name + " swung their arm across\n the table causing the ale to go flying across the tavern, the giant Dwarf sized beer mug smashed the wall causing the " + ale_type + "-ale to splash. The loud tavern silenced for a few seconds then went back to its normal self."
 
+    #format the global vars so we can use them in docstring
     story_text = story_text.format(**locals())
+
+    #send all the story parts back in the right order!
     return story_text + loner_story + ale_story
 
+#set story to = the tell_story return
 story = tell_story(name, loner, ale, ale_type, number1, number2, age)
+
+#then print it so we can read our story 
 print story
 
