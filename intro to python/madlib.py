@@ -1,4 +1,3 @@
-__author__ = 'Jason'
 #give ready a default value
 ready = ""
 
@@ -35,24 +34,31 @@ if ready == "yes":
     name = raw_input("Enter your name: ")
     print clear
 
+    #we will use this var later to give the story some uniqueness
     loner = raw_input("Are you a loner: ")
     print clear
 
+    #same for this one, uniqueness for the story
     ale = raw_input("Enjoy ale?: ")
     print clear
 
+    #ask them for a type of fish to generate a goofy ale name
     ale_type = raw_input("A type of fish: ")
     print clear
 
+    #the first number in generating a year
     number1 = raw_input("Enter a number: ")
     print clear
 
+    #the second number in generating a year
     number2 = raw_input("Enter yet another number: ")
     print clear
 
+    #we have to know the dwarf's age right?
     age = raw_input("Enter your age: ")
     print clear
 
+#if ready is not == yes then we should exit the program, although we should never hit this because of my genius while loop(yea im amazing!)
 else:
     exit()
 
@@ -60,20 +66,20 @@ else:
 def tell_story(name, loner, ale, ale_type, number1, number2, age):
     year = number1 + number2
 
-    #first part
+    #first part introductory to the story
     story_text = """
 The story begins here, it was the year of {year} a short one, but a historic one! It was a typical dwarvish
 night, everyone was gathered at the tavern of course! Though it was calm, brisk night and only the crickets
 were out, you could hear clinking of glasses and loud dwarves inside the tavern.
     """
 
-    #second part
+    #second part we use the loner var to write a clever story.
     if loner == "yes":
         loner_story = "\nInside the tavern sat a young dwarf, " + name + " was only " + age + " back then. Back then " + name + " was very shy, they\n could always be found in the same corner of the tavern."
     else:
         loner_story = "\nInside the tavern sat a young dwarf, " + name + " was only " + age + " back then. Back then " + name + " was very outgoing, they\n could always be found at the same table of the tavern with the group of dwarves. " + dwarves["joe"] + " and " + dwarves["larry"] + " were two regulars also."
 
-    #third part
+    #third part for the ale we also create a clever story but we use ale_type(really just a fish name)
     if ale == "yes":
         ale_story = "\n" + name + " was fond of the crisp bubbly " + ale_type + "-ale that the tender slammed on the table. Though " + name + " was frightened\n by the thought of " + ale_type + ", " + name + " was sure that the name had nothing to do with actual " + ale_type
     else:
