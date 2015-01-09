@@ -36,8 +36,8 @@
       <file leaf-file-name="madlib.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/madlib.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.804631" vertical-offset="659" max-vertical-offset="1350">
-              <caret line="81" column="40" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.21852387" vertical-offset="149" max-vertical-offset="1485">
+              <caret line="20" column="96" selection-start-line="20" selection-start-column="96" selection-end-line="20" selection-end-column="96" />
               <folding />
             </state>
           </provider>
@@ -299,8 +299,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/madlib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.804631" vertical-offset="659" max-vertical-offset="1350">
-          <caret line="81" column="40" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.21852387" vertical-offset="149" max-vertical-offset="1485">
+          <caret line="20" column="96" selection-start-line="20" selection-start-column="96" selection-end-line="20" selection-end-column="96" />
           <folding />
         </state>
       </provider>

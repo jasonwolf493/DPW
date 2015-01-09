@@ -18,7 +18,7 @@ while ready != "yes":
         print "Excuse me but we speak in full sentences here!"
         print "Are you ready? Yes or no?"
     else:
-        pass
+        print "What's this gibberish coming out of your mouth? Just say 'yes' when you're ready."
     #the title
     print "The Great Journey"
 
@@ -30,20 +30,29 @@ while ready != "yes":
 if ready == "yes":
     #~~~~~~~~~~ LETS GATHER SOME INFO! ~~~~~~~~~~~~~~~~~~
     print "Please enter the following info and a story shall be generated for you"
+
+    #get the adventurers name so we can call them something
     name = raw_input("Enter your name: ")
     print clear
+
     loner = raw_input("Are you a loner: ")
     print clear
+
     ale = raw_input("Enjoy ale?: ")
     print clear
+
     ale_type = raw_input("A type of fish: ")
     print clear
+
     number1 = raw_input("Enter a number: ")
     print clear
+
     number2 = raw_input("Enter yet another number: ")
     print clear
+
     age = raw_input("Enter your age: ")
     print clear
+
 else:
     exit()
 
@@ -79,6 +88,6 @@ were out, you could hear clinking of glasses and loud dwarves inside the tavern.
 #set story to = the tell_story return
 story = tell_story(name, loner, ale, ale_type, number1, number2, age)
 
-#then print it so we can read our story 
+#then print it so we can read our story
 print story
 
