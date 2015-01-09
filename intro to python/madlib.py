@@ -16,7 +16,7 @@ while ready != "yes":
     if ready == "y":
         print "Excuse me but we speak in full sentences here!"
         print "Are you ready? Yes or no?"
-    else:
+    elif ready != "":
         print "What's this gibberish coming out of your mouth? Just say 'yes' when you're ready."
     #the title
     print "The Great Journey"
