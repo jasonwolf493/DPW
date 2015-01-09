@@ -5,6 +5,10 @@ ready = ""
 #neat little trick to clear terminal
 clear = chr(27) + "[2J"
 
+#dwarves have a couple names, Dictionaries are perfect for that!
+dwarves = dict()
+dwarves = {"larry":"Ronan Coppertapper", "joe":"Goraidh Redboron"}
+
 #If user is not ready lets do this.
 while ready != "yes":
     print clear
@@ -58,12 +62,10 @@ were out, you could hear clinking of glasses and loud dwarves inside the tavern.
     if loner == "yes":
         loner_story = "\nInside the tavern sat a young dwarf, " + name + " was only " + age + " back then. Back then " + name + " was very shy, they\n could always be found in the same corner of the tavern."
     else:
-        loner_story = "\nInside the tavern sat a young dwarf, " + name + " was only " + age + " back then. Back then " + name + " was very outgoing, they\n could always be found at the same table of the tavern with the group of dwarves."
+        loner_story = "\nInside the tavern sat a young dwarf, " + name + " was only " + age + " back then. Back then " + name + " was very outgoing, they\n could always be found at the same table of the tavern with the group of dwarves. " + dwarves["joe"] + " and " + dwarves["larry"] + " were two regulars also."
 
-    #dwarves have a couple names, Dictionaries are perfect for that!
-    dwarves = dict()
-movies = {"starwars":"darth vader", "silence of the lambs":"Hannibal Lecter"}
-print movies["starwars"]
+
+    #print dwarves["larry"], dwarves["joe"]
 
 
     #third part
