@@ -47,7 +47,7 @@ class MainHandler(webapp2.RequestHandler):
             address = self.request.GET['address']
             state = self.request.GET['state']
             self.body = "<h1>Thanks!</h1><h2>" + first_name + " " + last_name + " our team will jump right on it.</h2>"
-            self.response.write(self.head + self.body + "<br> First Name: " + first_name + "<br><br>Last Name: " + last_name + "<br><br>Address: " + address + "<br><br>State: " + state + "<br><br>Your package will leave our facility momentarily" + self.close)
+            self.response.write(self.head + self.body + " <br>First Name: " + first_name + "<br>Last Name: " + last_name + "<br>Address: " + address + "<br>State: " + state + "<br><br>Your package will leave our facility momentarily" + self.close)
         else:
             self.response.write(self.head + self.body + self.form + self.close)
 

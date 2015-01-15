@@ -22,11 +22,11 @@
       <content type="file-editors">
         <state>
           <leaf>
-            <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="true">
+            <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/simple-form/main.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.47901592" vertical-offset="164" max-vertical-offset="930">
-                    <caret line="33" column="123" selection-start-line="33" selection-start-column="123" selection-end-line="33" selection-end-column="123" />
+                  <state vertical-scroll-proportion="0.7178003" vertical-offset="239" max-vertical-offset="930">
+                    <caret line="49" column="61" selection-start-line="49" selection-start-column="61" selection-end-line="49" selection-end-column="61" />
                     <folding />
                   </state>
                 </provider>
@@ -43,11 +43,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/simple-form/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8394698" vertical-offset="0" max-vertical-offset="690">
-              <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.88365245" vertical-offset="0" max-vertical-offset="690">
+              <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -71,8 +71,8 @@
         <option value="$PROJECT_DIR$/data-objects/main.py" />
         <option value="$PROJECT_DIR$/simple-form/app.yaml" />
         <option value="$PROJECT_DIR$/simple-form/pages.py" />
-        <option value="$PROJECT_DIR$/simple-form/main.py" />
         <option value="$PROJECT_DIR$/simple-form/css/style.css" />
+        <option value="$PROJECT_DIR$/simple-form/main.py" />
       </list>
     </option>
   </component>
@@ -421,18 +421,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simple-form/main.py">
+    <entry file="file://$PROJECT_DIR$/simple-form/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47901592" vertical-offset="164" max-vertical-offset="930">
-          <caret line="33" column="123" selection-start-line="33" selection-start-column="123" selection-end-line="33" selection-end-column="123" />
+        <state vertical-scroll-proportion="0.88365245" vertical-offset="0" max-vertical-offset="690">
+          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simple-form/css/style.css">
+    <entry file="file://$PROJECT_DIR$/simple-form/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8394698" vertical-offset="0" max-vertical-offset="690">
-          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.7178003" vertical-offset="239" max-vertical-offset="930">
+          <caret line="49" column="61" selection-start-line="49" selection-start-column="61" selection-end-line="49" selection-end-column="61" />
           <folding />
         </state>
       </provider>
