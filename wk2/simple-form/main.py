@@ -21,9 +21,9 @@ class MainHandler(webapp2.RequestHandler):
         """
         self.form = """
             <form method="GET" action="">
-                <input type="text" placeholder="John" name="first_name" required/>
-                <input type="text" placeholder="Doe" name="last_name" required/><br>
-                <input type="text" placeholder="123 Main St." name="address" required/>
+                <input id="textinput" type="text" placeholder="John" name="first_name" required/>
+                <input id="textinput" type="text" placeholder="Doe" name="last_name" required/><br>
+                <input id="addressinput" type="text" placeholder="123 Main St." name="address" required/>
                 <select name="state">
                     <option value="Connecticut">Connecticut</option>
                     <option value="Massachusetts">Massachusetts</option>
@@ -31,7 +31,7 @@ class MainHandler(webapp2.RequestHandler):
                     <option value="Pennsylvania">Pennsylvania</option>
                 </select>
                 <br><input type="radio" name="agree" value="true">I agreed to the shipping terms and conditions
-                <br><input type="submit" value="Submit" />
+                <br><input id="submit" type="submit" value="Submit" />
             </form>
         """
         self.close = """
