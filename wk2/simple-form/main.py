@@ -24,13 +24,14 @@ class MainHandler(webapp2.RequestHandler):
                 <input id="textinput" type="text" placeholder="John" name="first_name" required/>
                 <input id="textinput" type="text" placeholder="Doe" name="last_name" required/><br>
                 <input id="addressinput" type="text" placeholder="123 Main St." name="address" required/>
+                <br>
                 <select name="state">
                     <option value="Connecticut">Connecticut</option>
                     <option value="Massachusetts">Massachusetts</option>
                     <option value="Ohio">Ohio</option>
                     <option value="Pennsylvania">Pennsylvania</option>
                 </select>
-                <br><input type="radio" name="agree" value="true">I agreed to the shipping terms and conditions
+                <br><input id="radio" type="radio" name="agree" value="true">I agreed to the shipping terms and conditions.
                 <br><input id="submit" type="submit" value="Submit" />
             </form>
         """

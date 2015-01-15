@@ -19,3 +19,23 @@ h2{
     font-weight:normal;
     margin:0px;
 }
+#textinput{
+    height: 15px;
+    width: 175px;
+    margin-top:20px;
+}
+#addressinput{
+    height: 15px;
+    width: 360px;
+    margin-top:10px;
+}
+select{
+    height:25px;
+    margin-top:10px;
+    margin-left:0px;
+    margin-bottom:10px;
+}
+#submit{
+    width:109px;
+    margin-top:10px;
+}
