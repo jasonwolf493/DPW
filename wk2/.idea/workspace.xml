@@ -22,11 +22,11 @@
       <content type="file-editors">
         <state>
           <leaf>
-            <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
+            <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/simple-form/main.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.7829233" vertical-offset="194" max-vertical-offset="930">
-                    <caret line="49" column="239" selection-start-line="49" selection-start-column="239" selection-end-line="49" selection-end-column="239" />
+                  <state vertical-scroll-proportion="0.023154847" vertical-offset="194" max-vertical-offset="930">
+                    <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
                     <folding />
                   </state>
                 </provider>
@@ -43,7 +43,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/simple-form/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.88365245" vertical-offset="0" max-vertical-offset="690">
@@ -421,18 +421,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simple-form/css/style.css">
+    <entry file="file://$PROJECT_DIR$/simple-form/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.88365245" vertical-offset="0" max-vertical-offset="690">
-          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.023154847" vertical-offset="194" max-vertical-offset="930">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simple-form/main.py">
+    <entry file="file://$PROJECT_DIR$/simple-form/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7829233" vertical-offset="194" max-vertical-offset="930">
-          <caret line="49" column="239" selection-start-line="49" selection-start-column="239" selection-end-line="49" selection-end-column="239" />
+        <state vertical-scroll-proportion="0.88365245" vertical-offset="0" max-vertical-offset="690">
+          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
           <folding />
         </state>
       </provider>
