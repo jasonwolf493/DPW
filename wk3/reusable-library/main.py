@@ -20,7 +20,7 @@ class MainHandler(webapp2.RequestHandler):
         pc1.biweekly = True
         pc1.wage = 10
         pc1.hours = 40
-        pc1.holiday = 0
+        pc1.holiday = 1
         cal.total_up(pc1)
 
         self.response.write(p.print_out())

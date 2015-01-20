@@ -7,7 +7,11 @@ class Calculate(object):
 
     def total_up(self, c):
         self.__info.append(c)
+        holiday_hours = c.holiday * 1.5
+        holiday_pay = holiday_hours * c.wage
+        total = c.wage * c.hours + holiday_pay
         print c.wage
+        print total
 
 
 class Paycheck(object):
