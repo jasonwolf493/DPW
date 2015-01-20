@@ -6,11 +6,9 @@ class Calculate(object):
     #this will simply total everything up and return the total
     def total_up(self, c):
         self.__info.append(c)
-        __holiday_hours = c.holiday * 1.5
-        __holiday_pay = __holiday_hours * c.wage
-        total = c.wage * c.hours + __holiday_pay
-        #print c.wage
-        #print total
+        __holiday_hours = int(c.holiday) * 1.5
+        __holiday_pay = __holiday_hours * int(c.wage)
+        total = int(c.wage) * int(c.hours) + __holiday_pay
         return total
 
     #this will generate some friendly text after getting the total from total_up
@@ -24,11 +22,12 @@ class Calculate(object):
 class Paycheck(object):
     def __init__(self):
         self.__biweekly = False
-        self.__wage = 0 #check if meets federal minimum wage
+        self.__wage = 0
         self.__hours = 0
         self.__holiday = 0
 
     #BIWEEKLY GETTER / SETTER
+
     @property
     def biweekly(self):
         pass
@@ -36,7 +35,7 @@ class Paycheck(object):
     @biweekly.setter
     def biweekly(self, y):
         self.__biweekly = y
-"""
+'''
     #WAGE GETTER / SETTER
     @property
     def wage(self):
@@ -62,6 +61,4 @@ class Paycheck(object):
 
     @holiday.setter
     def holiday(self, h):
-        self.__holiday = h
-
-"""
+        self.__holiday = h'''
