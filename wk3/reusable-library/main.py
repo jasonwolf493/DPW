@@ -1,11 +1,14 @@
-from Pages import FormPage
+from Pages import FormPage, ResultsPage
 from library import Paycheck, Calculate
 import webapp2
 
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        p = FormPage()
+        if self.request.GET:
+            p = ResultsPage()
+        else:
+            p = FormPage()
         cal = Calculate()
 
 
@@ -22,8 +25,9 @@ class MainHandler(webapp2.RequestHandler):
         pc1.hours = 40
         pc1.holiday = 1
         #cal.total_up(pc1)
-        cal.summary_text(pc1)
+        #self.response.write(cal.summary_text(pc1))
 
+        p.body = cal.summary_text(pc1)
         self.response.write(p.print_out())
 
 
