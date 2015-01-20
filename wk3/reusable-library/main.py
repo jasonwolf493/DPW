@@ -21,7 +21,8 @@ class MainHandler(webapp2.RequestHandler):
         pc1.wage = 10
         pc1.hours = 40
         pc1.holiday = 1
-        cal.total_up(pc1)
+        #cal.total_up(pc1)
+        cal.summary_text(pc1)
 
         self.response.write(p.print_out())
 
