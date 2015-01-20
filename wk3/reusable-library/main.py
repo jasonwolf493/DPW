@@ -1,11 +1,13 @@
 from Pages import FormPage
-from library import Paycheck
+from library import Paycheck, Calculate
 import webapp2
+
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         p = FormPage()
-        self.response.write(p.print_out())
+        cal = Calculate()
+
 
     #Paycheck calculator
         #biweekly?
@@ -19,6 +21,9 @@ class MainHandler(webapp2.RequestHandler):
         pc1.wage = 10
         pc1.hours = 40
         pc1.holiday = 0
+        cal.total_up(pc1)
+
+        self.response.write(p.print_out())
 
 
 app = webapp2.WSGIApplication([

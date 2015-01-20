@@ -1,3 +1,15 @@
+class Calculate(object):
+    def __init__(self):
+        print "calc init"
+        self.__info = []
+        #do some math with the vars
+        #store the paycheck amount
+
+    def total_up(self, c):
+        self.__info.append(c)
+        print c.wage
+
+
 class Paycheck(object):
     def __init__(self):
         self.__biweekly = False
@@ -13,7 +25,7 @@ class Paycheck(object):
     @biweekly.setter
     def biweekly(self, y):
         self.__biweekly = y
-
+"""
     #WAGE GETTER / SETTER
     @property
     def wage(self):
@@ -40,3 +52,5 @@ class Paycheck(object):
     @holiday.setter
     def holiday(self, h):
         self.__holiday = h
+
+"""
