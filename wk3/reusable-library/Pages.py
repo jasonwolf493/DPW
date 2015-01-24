@@ -22,8 +22,12 @@ Paycheck Calculator
             <input id="textinput" type="number" placeholder="Hours:" name="hours" required/><br>
             <input id="holiday" type="number" placeholder="Holiday Hours:" name="holiday" required/>
             <br>Bi-Weekly?<br>
+            <div id="radio1">
             Yes:<input id="radio" type="radio" name="biweekly" value="True" /><br>
+            </div>
+            <div id="radio2">
             No:<input id="radio" type="radio" name="biweekly" value="False" checked="checked" />
+            </div>
             <br><input id="submit" type="submit" value="Submit" onclick="validateForm()" />
         </form>
         </div>
@@ -61,11 +65,13 @@ class ResultsPage(object):
     <body>
         """
         #this is the body of the document
-        self.body = "RESULTS PAGE<br>"
+        self.body = "<div id='formdiv'><h3>Weekly Income*</h3><br>"
         #this spot is for errors
         self.__error = ''
         #here we close all of the open tags
         self.__close = """
+                <p id="info">The dollar amount of your check was determined before taxes, union fees, or any other type withholding.</p>
+            </div>
         <script src="/js/main.js"></script>
     </body>
 </html>

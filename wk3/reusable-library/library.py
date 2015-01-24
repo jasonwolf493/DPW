@@ -28,7 +28,7 @@ class Calculate(object):
         print total
         print Paycheck.wage
         #then we return that info
-        return "Gross: " + str(total)
+        return "<h2>Gross: $" + str(total) + "</h2>"
 
 
 #this is our dataobject we use this to store the info
