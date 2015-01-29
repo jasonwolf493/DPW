@@ -34,5 +34,5 @@ class OtherPage(Page):
 
     def content_print(self, p):
         self._content = p
-        all = self.head + self.body + p + self._error + self.close
+        all = self.head + self.body + self._content + self._error + self.close
         return all
