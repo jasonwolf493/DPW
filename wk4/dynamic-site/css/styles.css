@@ -1,6 +1,6 @@
 
 body{
-    min-height:500px;
+    min-height:1080px;
     margin:0px;
     background: #7db9e8;
     background: -moz-linear-gradient(top,  #7db9e8 0%, #1e5799 100%);
@@ -20,6 +20,10 @@ p{
 }
 
 h1{
+    margin-left:10px;
+    padding-left:10px;
+    width:370px;
+    background-color:#DCE0DF;
     opacity:0.70;
     font-family:Helvetica;
     margin-top:10px;
