@@ -1,3 +1,4 @@
+#this is the super class for the html, we will use this as the "Template"
 class Page(object):
     def __init__(self):
         self.__title = "PageTitle"
@@ -18,14 +19,20 @@ class Page(object):
         <div id="container">
 
         """
-        self.__error = ""
+        self._error = ""
         self.close = """
         </div>
     </body>
 </html>
         """
 
-    def print_out(self, p):
-        all = self.head + self.body + p + self.__error + self.close
-        return all
 
+class OtherPage(Page):
+    def __init__(self):
+        super(OtherPage, self).__init__()
+        self._content = ""
+
+    def content_print(self, p):
+        self._content = p
+        all = self.head + self.body + p + self._error + self.close
+        return all

@@ -35,7 +35,7 @@ class DataObject(object):
             <li>Cats</li>
             <li>Birds*</li>
         </ul>
-        <p>Not all of our services are available for all pets, if you dont see your pet or have other questions <a id="textlink" href="contact">contact us</a> today.</p>
+        <p>Not all of our services are available for all pets, if you dont see your pet or have other questions <a id="textlink" href="?page=contact">contact us</a> today.</p>
         """
         self.__services = """
         <h1>Services</h1>
