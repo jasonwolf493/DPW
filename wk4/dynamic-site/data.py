@@ -18,8 +18,10 @@ class DataObject(object):
         """
         self.__index = """
         <h1>Pet Cuts</h1>
+        <img id="index1" alt="Dog getting fur cut under chin." src="/imgs/index1.jpg">
         <p id="info">Premium grooming for your pet!<p>
         <p>We offer the best grooming services you can find for your pet. Our experienced pet dressers will give your pet the greatest experience possible. Our site provides you with a way to find out more info about us. But if you dont see what you are looking for just get in touch with us and we'll help you out.</p>
+
         """
         self.__animals = """
         <h1>Animals</h1>
