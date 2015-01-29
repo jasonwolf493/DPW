@@ -24,6 +24,9 @@ h1{
     font-family:Helvetica;
     margin-top:10px;
     margin-bottom:10px;
+    color:#FF4200;
+    font-size:25pt;
+    font-weight:normal;
 }
 
 #info{
@@ -35,22 +38,25 @@ ul{
     color:545454;
     opacity:0.65;
     font-family:Helvetica;
+    padding-left:20px;
+    list-style-type: none;
 }
 
+
 #container{
+    overflow:hidden;
     background-color:white;
     width:50%;
     min-width: 450px;
     padding:20px;
     margin-left:10%;
-
+    min-height:369px;
     box-shadow:inset 0 0 10px #000000;
 
 
 }
 
 #navContainer{
-
     font-family:helvetica;
     background-color:darkgrey;
     width:50%;
@@ -68,10 +74,18 @@ ul{
 
 }
 
-a{
+#navtext{
     color:white;
     margin-right:10px;
     margin-left:5px;
     text-decoration:none;
 }
-#index1{float:right;}
+#index1{
+    float:left;
+    padding:10px;
+}
+#textlink{
+    color:545454;
+    opacity:0.65;
+    font-family:Helvetica;
+}

@@ -13,7 +13,7 @@ class Page(object):
         """
         self.body = """
                 <div id="navContainer">
-            <a href="?page=index">Home</a><a href="?page=about">About</a><a href="?page=contact">Contact Us</a><a href="?page=animals">Animals</a><a href="?page=services">Services</a><a href="?page=cuts">Cuts</a>
+            <a id="navtext" href="?page=index">Home</a><a id="navtext" href="?page=about">About</a><a id="navtext" href="?page=contact">Contact Us</a><a id="navtext" href="?page=animals">Animals</a><a id="navtext" href="?page=services">Services</a><a id="navtext" href="?page=cuts">Cuts</a>
         </div>
         <div id="container">
 

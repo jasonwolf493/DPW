@@ -3,11 +3,13 @@ class DataObject(object):
         #default values if there are no inputs
         self.__about = """
         <h1>About Us</h1>
+        <img id="index1" alt="A professional grooming a dog." src="/imgs/about.jpg" height="253px" width="380px">
         <p id="info">Learn more about us!</p>
         <p>We've been working with pets for years, we provide professional services from professional staff and affordable prices. We offer cuts, coat cleaning, conditioning, and some flea and tick programs. We also make the service customizable, so your pet can get the best experience. You can select shampoos and conditioners you like along with other products you find best suitable for your pet.</p>
         """
         self.__contact = """
         <h1>Contact Us</h1>
+        <img id="index1" alt="friendly receptionist" src="/imgs/contact.jpg" height="253px" width="380px">
         <p id="info">Get in contact with us!</p>
         <div>
             <p>Here is our contact info, just for you!</p>
@@ -18,13 +20,14 @@ class DataObject(object):
         """
         self.__index = """
         <h1>Pet Cuts</h1>
-        <img id="index1" alt="Dog getting fur cut under chin." src="/imgs/index1.jpg">
+        <img id="index1" alt="Dog getting fur cut under chin." src="/imgs/index1.jpg" height="253px" width="380px">
         <p id="info">Premium grooming for your pet!<p>
         <p>We offer the best grooming services you can find for your pet. Our experienced pet dressers will give your pet the greatest experience possible. Our site provides you with a way to find out more info about us. But if you dont see what you are looking for just get in touch with us and we'll help you out.</p>
 
         """
         self.__animals = """
         <h1>Animals</h1>
+        <img id="index1" alt="A dog and cat." src="/imgs/animals.jpg" height="335px" width="380px">
         <p id="info">Who do we provide services to?<p>
         <p>The pets that we provide services for are:</p>
         <ul>
@@ -32,10 +35,11 @@ class DataObject(object):
             <li>Cats</li>
             <li>Birds*</li>
         </ul>
-        <p>Not all of our services are available for all pets, if you dont see your pet or have other questions <a href="contact">contact us</a> today.</p>
+        <p>Not all of our services are available for all pets, if you dont see your pet or have other questions <a id="textlink" href="contact">contact us</a> today.</p>
         """
         self.__services = """
         <h1>Services</h1>
+        <img id="index1" alt="A dog bath" src="/imgs/services.jpg" height="252px" width="380px">
         <p id="info">Check out some of the services we provide.<p>
         <p>Some of the services we provide are:</p>
         <ul>
@@ -49,6 +53,7 @@ class DataObject(object):
         """
         self.__cuts = """
         <h1>Cuts</h1>
+        <img id="index1" alt="A dog and cat." src="/imgs/cuts.jpg" height="380px" width="253px">
         <p id="info">These are some of the cut we do.<p>
         <p>Cuts we provide:</p>
         <ul>
