@@ -12,11 +12,14 @@ class Page(object):
     <body>
         """
         self.body = """
-        <p>Anything for the body will go here</p>
-        <a href="?page=index">Home</a><a href="?page=about">About</a>
+        <div id="container">
+        <div id="navContainer">
+            <a href="?page=index">Home</a><a href="?page=about">About</a><a href="?page=contact">Contact Us</a>
+        </div>
         """
         self.__error = ""
         self.close = """
+        </div>
     </body>
 </html>
         """
