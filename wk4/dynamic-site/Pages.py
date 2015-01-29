@@ -13,6 +13,7 @@ class Page(object):
         """
         self.body = """
         <p>Anything for the body will go here</p>
+        <a href="?page=index">Home</a><a href="?page=about">About</a>
         """
         self.__error = ""
         self.close = """
@@ -20,6 +21,7 @@ class Page(object):
 </html>
         """
 
-    def print_out(self):
-        all = self.head + self.body + self.__error + self.close
+    def print_out(self, p):
+        all = self.head + self.body + "This is from PAGES>>>" + p + "<<<" + self.__error + self.close
         return all
+
