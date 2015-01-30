@@ -3,6 +3,8 @@ from Pages import OtherPage
 from data import DataObject
 import webapp2
 
+#this is the main handler for the application
+
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
