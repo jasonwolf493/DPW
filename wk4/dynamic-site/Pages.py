@@ -13,11 +13,15 @@ class Page(object):
     <body>
         """
         self.body = """
-                <div id="navContainer">
-            <a id="navtext" href="?page=index">Home</a><a id="navtext" href="?page=about">About</a><a id="navtext" href="?page=contact">Contact Us</a><a id="navtext" href="?page=animals">Animals</a><a id="navtext" href="?page=services">Services</a><a id="navtext" href="?page=cuts">Cuts</a>
+        <div id="navContainer">
+            <a id="navtext" href="?page=index">Home</a>
+            <a id="navtext" href="?page=about">About</a>
+            <a id="navtext" href="?page=contact">Contact Us</a>
+            <a id="navtext" href="?page=animals">Animals</a>
+            <a id="navtext" href="?page=services">Services</a>
+            <a id="navtext" href="?page=cuts">Cuts</a>
         </div>
         <div id="container">
-
         """
         self._error = ""
         self.close = """
