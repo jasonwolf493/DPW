@@ -26,6 +26,10 @@ class Page(object):
 </html>
         """
 
+    def print_out(self, p):
+        return self.head + self.body + self.close
+
+
 #this is now a sub class to Page()
 class OtherPage(Page):
     def __init__(self):
@@ -34,7 +38,8 @@ class OtherPage(Page):
         #we will use _content to store content that needs to be displayed to the page
         self._content = ""
     #this is essentially like the old print out function but a little more robust
-    def content_print(self, p):
+
+    def print_out(self, p):
         #we set our _content to the data the we have passed to this function
         self._content = p
         #we are going to set 'all' to equal most of the things from our super class...
