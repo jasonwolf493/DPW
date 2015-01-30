@@ -1,6 +1,8 @@
+#import classes from other python files
 from Pages import OtherPage
 from data import DataObject
 import webapp2
+
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):

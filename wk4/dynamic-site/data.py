@@ -77,6 +77,7 @@ class DataObject(object):
             <p>This is just to name a few for the full catalog come to the salon we'll be happy to show you.</p>
         """
 #now once this is called...
+
     def page_return(self):
         #check what page the user is trying to see
         if self.page == "index":
