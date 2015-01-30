@@ -25,8 +25,9 @@ class Page(object):
     </body>
 </html>
         """
-
+    #this is the super's print out function, we will override this in the sub class.
     def print_out(self, p):
+        #return some basic data
         return self.head + self.body + self.close
 
 
