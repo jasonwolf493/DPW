@@ -1,5 +1,13 @@
 class DataObject(object):
     def __init__(self):
+        #this is for the home page.
+        self.__index = """
+            <h1>Pet Cuts</h1>
+            <img id="index1" alt="Dog getting fur cut under chin." src="/imgs/index1.jpg" height="253px" width="380px">
+            <p id="info">Premium grooming for your pet!<p>
+            <p>We offer the best grooming services you can find for your pet. Our experienced pet dressers will give your pet the greatest experience possible. Our site provides you with a way to find out more info about us. But if you dont see what you are looking for just get in touch with us and we'll help you out.</p>
+
+        """
         #this is the data we will need for the about page.
         self.__about = """
             <h1>About Us</h1>
@@ -19,14 +27,7 @@ class DataObject(object):
                 <p>Address: 123 Main St.</p>
             </div>
         """
-        #this is for the home page.
-        self.__index = """
-            <h1>Pet Cuts</h1>
-            <img id="index1" alt="Dog getting fur cut under chin." src="/imgs/index1.jpg" height="253px" width="380px">
-            <p id="info">Premium grooming for your pet!<p>
-            <p>We offer the best grooming services you can find for your pet. Our experienced pet dressers will give your pet the greatest experience possible. Our site provides you with a way to find out more info about us. But if you dont see what you are looking for just get in touch with us and we'll help you out.</p>
 
-        """
         #And... the animal page
         self.__animals = """
             <h1>Animals</h1>
