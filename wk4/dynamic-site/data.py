@@ -59,7 +59,7 @@ class DataObject(object):
         #and the different cuts the company offers
         self.__cuts = """
             <h1>Cuts</h1>
-            <img id="index1" alt="A dog and cat." src="/imgs/cuts.jpg" height="380px" width="253px">
+            <img id="index1" alt="picture of a catalog." src="/imgs/cuts.jpg" height="380px" width="253px">
             <p id="info">These are some of the cut we do.<p>
             <p>Cuts we provide:</p>
             <ul>
